@@ -1,6 +1,17 @@
 {
-    "rewrites":[{
-        "source":"/(.*)",
-        "destination":"/"
+    "version": 2,
+    "public": false,
+    "builds": [{
+        "src": "/app/package.json",
+        "use": "@vercel/next"
+    }],
+    "routes":[{
+        "headers":{
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+            "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept"
+        },
+        "src": "/.*",
+        "dest": "/app/pages/index.js"
     }]
 }
