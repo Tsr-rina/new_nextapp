@@ -1,10 +1,6 @@
 {
     "version": 2,
     "public": false,
-    "builds": [{
-        "src": "/app/package.json",
-        "use": "@vercel/next"
-    }],
     "routes":[{
         "headers":{
             "Access-Control-Allow-Origin": "*",
