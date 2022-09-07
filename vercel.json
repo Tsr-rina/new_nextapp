@@ -8,7 +8,7 @@
             "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept"
         },
         "src": "/.*",
-        "dest": "/app/package.json"
+        "dest": "/app/pages/index.js"
     }]
 
 }

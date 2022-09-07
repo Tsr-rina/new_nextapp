@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export":"next export",
     "start": "next start",
     "lint": "next lint"
   },
@@ -18,4 +19,5 @@
     "eslint": "8.20.0",
     "eslint-config-next": "12.2.3"
   }
+  
 }
